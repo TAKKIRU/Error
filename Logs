@@ -1,0 +1,12 @@
+[01:50:55] [packetevents-update-check-thread/INFO]: [packetevents] [packetevents] Checking for an update, please wait...
+[01:50:55] [packetevents-update-check-thread/WARN]: Exception in thread "packetevents-update-check-thread" java.lang.NoClassDefFoundError: net/minecraft/util/com/google/gson/JsonParser
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.updatechecker.LowLevelUpdateCheckerLegacy.getLatestRelease(LowLevelUpdateCheckerLegacy.java:37)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.updatechecker.UpdateChecker.checkLatestReleasedVersion(UpdateChecker.java:45)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.updatechecker.UpdateChecker.checkForUpdate(UpdateChecker.java:55)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.PacketEvents.lambda$handleUpdateCheck$2(PacketEvents.java:343)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[01:50:55] [packetevents-update-check-thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.util.com.google.gson.JsonParser
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:174)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:126)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+[01:50:55] [packetevents-update-check-thread/WARN]: 	... 5 more
