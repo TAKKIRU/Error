@@ -1,12 +1,28 @@
-[01:50:55] [packetevents-update-check-thread/INFO]: [packetevents] [packetevents] Checking for an update, please wait...
-[01:50:55] [packetevents-update-check-thread/WARN]: Exception in thread "packetevents-update-check-thread" java.lang.NoClassDefFoundError: net/minecraft/util/com/google/gson/JsonParser
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.updatechecker.LowLevelUpdateCheckerLegacy.getLatestRelease(LowLevelUpdateCheckerLegacy.java:37)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.updatechecker.UpdateChecker.checkLatestReleasedVersion(UpdateChecker.java:45)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.updatechecker.UpdateChecker.checkForUpdate(UpdateChecker.java:55)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at packetevents-1.8.4.jar//io.github.retrooper.packetevents.PacketEvents.lambda$handleUpdateCheck$2(PacketEvents.java:343)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
-[01:50:55] [packetevents-update-check-thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.util.com.google.gson.JsonParser
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:174)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:126)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-[01:50:55] [packetevents-update-check-thread/WARN]: 	... 5 more
+[06:42:05 ERROR]: Could not pass event PlayerJoinEvent to Themis v0.15.0
+[06:42:05 ERROR]: Suspected Plugins: 
+[06:42:05 ERROR]:       Themis{enabled,ver=0.15.0,path=plugins/Themis_0.15.0.jar}
+[06:42:05 ERROR]:       ProtocolLib{enabled,ver=5.0.0,path=plugins/ProtocolLib.jar}
+[06:42:05 ERROR]: Exception details below: 
+com.comphenix.protocol.reflect.FieldAccessException: Field index 0 is out of bounds for length 0
+        at com.comphenix.protocol.reflect.FieldAccessException.fromFormat(FieldAccessException.java:49) ~[ProtocolLib.jar:?]
+        at com.comphenix.protocol.reflect.StructureModifier.write(StructureModifier.java:316) ~[ProtocolLib.jar:?]
+        at com.gmail.olexorus.themis.Um.z(Unknown Source) ~[Themis_0.15.0.jar:?]
+        at com.gmail.olexorus.themis.Um.n(Unknown Source) ~[Themis_0.15.0.jar:?]
+        at com.gmail.olexorus.themis.Jk.P(Unknown Source) ~[Themis_0.15.0.jar:?]
+        at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor227.execute(Unknown Source) ~[?:?]
+        at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[ssspigot-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+        at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:76) ~[ssspigot-api-1.19.2-R0.1-SNAPSHOT.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[ssspigot-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:680) ~[ssspigot-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+        at net.minecraft.server.players.PlayerList.postChunkLoadJoin(PlayerList.java:372) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at net.minecraft.server.players.PlayerList.lambda$placeNewPlayer$0(PlayerList.java:309) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:156) ~[?:?]
+        at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+        at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:128) ~[?:?]
+        at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1337) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1330) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[?:?]
+        at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1305) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1192) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:309) ~[ssspigot-1.19.2.jar:SSSpigot2-1.19.2-20230117-f316f56]
+        at java.lang.Thread.run(Thread.java:833) ~[?:?]
